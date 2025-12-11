@@ -33,6 +33,10 @@ async def create_bussness(
         )
         await bussness_pydantic.from_tortoise_orm(bussness_obj)
 
+# send verification email
+async def send_verification_email(user: User):
+    
+
 
 @app.get("/")
 def read_root():
